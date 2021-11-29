@@ -1,18 +1,7 @@
 import React from 'react'
 import {useQuery, gql} from '@apollo/client'
+import { GET_TODO } from '../GraphQL/Query'
 
-
-const GET_TODO = gql `
-query{
-    todos{
-      id
-      title
-      description
-      isDone
-  
-    }
-  }
-`;
 
 export default function TodoList() {
 

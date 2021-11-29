@@ -54,10 +54,11 @@ export default function TodoList() {
                      }}
                      >
 
-                    {todo.title}{todo.description}
+                    {todo.title}
+                    {todo.description}
                     
                     </span>
-                    <button onClick={() => handleDelete(todo.id)}>X</button>
+                    <button className='todo-button' onClick={() => handleDelete(todo.id)}>X</button>
                    
                    
                 </div>

@@ -1,7 +1,6 @@
 .items-to-display{
     font-size: medium;
     margin: 5px 5px 5px 5px;
-    white-space: nowrap;
     
 
 }
@@ -13,6 +12,7 @@
 #item-id {
     cursor: pointer;
     text-align: center;
+    
     
 }
 
@@ -36,3 +36,17 @@
 #todo-id:hover {
     background-color: rgb(180, 179, 179);
 }
+
+.todo-button {
+    float:right;
+    margin-left : 1%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.todo-button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+

@@ -1,31 +1,22 @@
 import { gql } from '@apollo/client'
 
-const UPDATE_TODO = gql `
-
-    mutation{
-        updateTodo(id:"104", data:{
-            isDone:false
-        
-        })
+const CREATE_TODO = gql`
+   mutation createTodo($description : String! $title: String! $isDone: Boolean!) {
+        createTodo(data:{description : $description, title : $title , isDone : $isDone}) {
+            id
+            description
+            title
+            isDone
+        }
     }
 `
 
-const CREATE_TODO = gql`
-   mutation{
-        createTodo(data:{
-            title:"New task",
-            description:"Sample",
-            isDone:false
-            
-        })
-}
-`
-
 const DELETE_TODO = gql`
-    mutation
-            {
-            deleteTodo(id:"4e39959c-015e-4bb5-84fb-8c0dfd79f1f0")
-            }
+    mutation deleteTodo($id : ID!) {
+        deleteTodo(id : $id) {
+            id
+        }
+    }
 `
 
-export {DELETE_TODO,UPDATE_TODO,CREATE_TODO}
+export {DELETE_TODO,CREATE_TODO}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {useMutation, gql} from '@apollo/client'
+import {useMutation} from '@apollo/client'
 import { useState } from 'react'
 
 import {CREATE_TODO} from '../GraphQL/Mutation'
@@ -10,6 +10,7 @@ export default function TodoCrud() {
     const [addTodo] = useMutation(CREATE_TODO)
     const [description, setDescription] = useState('')
     const [title, setTitle] = useState('')
+    const [isDone, setIsDone] = useState(false)
 
     return (
         <div className = "addTodo">
@@ -28,9 +29,11 @@ export default function TodoCrud() {
             <button 
                 onClick={e => {
                     e.preventDefault()
-                    addTodo({ variables: { title,description } })
-                    setDescription('')
+                    addTodo({ variables: { title,description, isDone } })
                     setTitle('')
+                    setDescription('')
+                    setIsDone(false)
+                    
                 }}
             >
             Add</button>

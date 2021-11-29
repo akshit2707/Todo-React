@@ -30,9 +30,7 @@ export default function TodoList() {
                 return (
                 <div>
                     <h1>{todo.title}</h1>
-                    <h3>
-                    {todo.description}
-                    </h3>
+                    <h3>{todo.description}</h3>
                 </div>
                 
                 )

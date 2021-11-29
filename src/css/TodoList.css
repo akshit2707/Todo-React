@@ -9,7 +9,7 @@
 .todo-items{
     font-size : 20px;
     font-style : monospace;
-    border : 1px solid grey;
+    border : 1px solid red;
     margin: auto;
     width: 60%;
     padding : 0.5% 0.5% 0.5% 1%;
@@ -17,7 +17,8 @@
 
 .todo-item {
     text-decoration: line-through;
-    text-decoration-color: grey;
+    text-decoration-color: red;
+    background-color: red;
 }
 
 #todo-id:nth-child(odd) {

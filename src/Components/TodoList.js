@@ -55,8 +55,9 @@ export default function TodoList() {
 
                     <h1>{todo.title}</h1>
                     <h3>{todo.description}</h3>
-                    <button onClick={() => handleDelete(todo.id)}>X</button>
                     </span>
+                    <button onClick={() => handleDelete(todo.id)}>X</button>
+                   
                    
                 </div>
                 

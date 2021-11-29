@@ -40,10 +40,11 @@ export default function TodoList() {
 
     return (
         <div className='TodoList'>
+            <h1>Todo</h1>
             {data.todos.map(todo =>{
 
                 return (
-                <div>
+                <div className='items-to-display'>
 
                      <span  
                      className={todo.isDone?'todo-item':'false-todo-item'}
@@ -53,8 +54,8 @@ export default function TodoList() {
                      }}
                      >
 
-                    <h1>{todo.title}</h1>
-                    <h3>{todo.description}</h3>
+                    {todo.title}{todo.description}
+                    
                     </span>
                     <button onClick={() => handleDelete(todo.id)}>X</button>
                    

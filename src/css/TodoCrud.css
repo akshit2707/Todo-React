@@ -1,0 +1,22 @@
+input#add-todo {
+    border: 2px solid #555;
+    margin-top: 5px;
+    border-radius: 10px;
+
+
+}
+
+.heading-todoList{
+}
+
+.addTodo-button {
+    
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      
+}

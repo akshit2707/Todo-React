@@ -5,6 +5,8 @@ import { useState } from 'react'
 import {CREATE_TODO} from '../GraphQL/Mutation'
 import { GET_TODO } from '../GraphQL/Query'
 
+import '../css/TodoCrud.css'
+
 
 export default function TodoCrud() {
 
@@ -22,7 +24,7 @@ export default function TodoCrud() {
     return (
         <div className = "addTodo">
             <label htmlFor="add-todo">
-                Enter your list 
+                <h3>Enter your list </h3>
             </label>
             <br/>
             <input id="add-todo" value={title} placeholder='Enter title here'
@@ -33,7 +35,7 @@ export default function TodoCrud() {
                 onChange={e => setDescription(e.target.value)}>
             </input>
             <br/>
-            <button 
+            <button className='addTodo-button'
                 onClick={e => {
                     e.preventDefault()
                     addTodo({ variables: { title,description, isDone } })

@@ -1,14 +1,22 @@
+.items-to-display{
+    font-size: medium;
+    margin: 5px 5px 5px 5px;
+    white-space: nowrap;
+    
+
+}
+
 .todos {
     margin-top: 2%;
 }
 
 #item-id {
     cursor: pointer;
+    text-align: center;
+    
 }
 
 .todo-items{
-    font-size : 20px;
-    font-style : monospace;
     border : 1px solid red;
     margin: auto;
     width: 60%;
@@ -18,7 +26,7 @@
 .todo-item {
     text-decoration: line-through;
     text-decoration-color: red;
-    background-color: red;
+;
 }
 
 #todo-id:nth-child(odd) {

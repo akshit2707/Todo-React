@@ -3,11 +3,18 @@ import {useMutation} from '@apollo/client'
 import { useState } from 'react'
 
 import {CREATE_TODO} from '../GraphQL/Mutation'
+import { GET_TODO } from '../GraphQL/Query'
 
 
 export default function TodoCrud() {
 
-    const [addTodo] = useMutation(CREATE_TODO)
+    const [addTodo] = useMutation(CREATE_TODO, {
+        refetchQueries: [
+          GET_TODO
+        ],
+      }
+        
+        )
     const [description, setDescription] = useState('')
     const [title, setTitle] = useState('')
     const [isDone, setIsDone] = useState(false)

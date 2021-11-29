@@ -19,4 +19,15 @@ const DELETE_TODO = gql`
     }
 `
 
-export {DELETE_TODO,CREATE_TODO}
+
+const UPDATE_STATUS = gql`
+
+mutation updateTodo($id : ID!, $isDone : Boolean!) {
+        updateTodo(id : $id, data:{isDone : $isDone}) {
+            id
+            isDone
+        }
+    }
+
+`
+export {DELETE_TODO,CREATE_TODO, UPDATE_STATUS}

@@ -55,6 +55,7 @@ export default function TodoList() {
                      >
 
                     {todo.title}
+                    <br/>
                     {todo.description}
                     
                     </span>

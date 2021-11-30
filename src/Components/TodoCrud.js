@@ -38,6 +38,10 @@ export default function TodoCrud() {
             <button className='addTodo-button'
                 onClick={e => {
                     e.preventDefault()
+                    if(title==''){
+                        alert("No title added")
+                        return
+                    }
                     addTodo({ variables: { title,description, isDone } })
                     setTitle('')
                     setDescription('')

@@ -6,9 +6,6 @@ input#add-todo {
 
 }
 
-.heading-todoList{
-}
-
 .addTodo-button {
     
         background-color: #4CAF50;
@@ -19,4 +16,9 @@ input#add-todo {
         margin: 4px 2px;
         cursor: pointer;
       
+}
+
+.addTodo {
+    margin-top: 0px;
+    padding-top: 0px;
 }

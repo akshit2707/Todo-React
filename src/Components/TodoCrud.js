@@ -39,7 +39,7 @@ export default function TodoCrud() {
                 onClick={e => {
                     e.preventDefault()
                     if(title===''){
-                        alert("No title added")
+                        alert("No title added.Please add title to proceed")
                         return
                     }
                     addTodo({ variables: { title,description, isDone } })

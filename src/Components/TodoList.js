@@ -59,7 +59,8 @@ export default function TodoList() {
                     {todo.description}
                     
                     </span>
-                    <button className='todo-button' onClick={() => handleDelete(todo.id)}>X</button>
+                    <br/>
+                    <button className='todo-button' onClick={() => handleDelete(todo.id)}>Remove</button>
                    
                    
                 </div>

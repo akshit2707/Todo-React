@@ -33,7 +33,7 @@
 }
 
 .todo-button {
-    margin-left : 50px;
+    
     align-self: center;
 
     border: 1px solid black;
@@ -45,4 +45,12 @@
     color: #fff;
 }
 
+.TodoList{
+    background-color:#eee;
+}
+
+
+.items-to-display{
+    padding-bottom: 20px;
+}
 
